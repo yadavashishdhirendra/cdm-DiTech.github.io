@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Noto_Serif_SC";
+    src: url("../Fonts/NotoSerifSC-Bold.otf");
+}
+
+@font-face {
+    font-family: "Noto_Serif_SC_Medium";
+    src: url("../Fonts/NotoSerifSC-Medium.otf");
+}
+
+
+@font-face {
+    font-family: "Nunito_Bold";
+    src: url("../Fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito_SemiBold";
+    src: url("../Fonts/Nunito-SemiBold.ttf");
+}
+
+
+@font-face {
+    font-family: "Nunito_ExtraBold";
+    src: url("../Fonts/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito_Medium";
+    src: url("../Fonts/Nunito-Medium.ttf");
+}
+
+
+@font-face {
+    font-family: "Nunito_regular";
+    src: url("../Fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Raleway_regular";
+    src: url("../Fonts/Raleway-Regular.ttf");
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 0px;
+    background-color: #F5F5F5;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #29267E;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    background-color: #FFFF;
+}
+
+/* grid container starts here */
+.form-container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 8rem;
+}
+
+.form-container-grid>div:nth-child(1) {
+    border-right: 1px solid #C7C7C7;
+}
+
+.form-container-grid>div {
+    /* border: 1px solid black; */
+    /* height: 100px; */
+    padding: 30px 30px 30px 30px;
+}
+
+.container-text>h2 {
+    font-family: 'Noto_Serif_SC_Medium';
+    font-size: 32px;
+    line-height: 1.3195;
+    color: #29267E;
+}
+
+@media screen and (max-width: 992px) {
+    .form-container-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .form-container-grid>div:nth-child(1) {
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container-text>h2 br{
+        display: none;
+    }
+    .form-container-grid>div{
+        padding: 0px 10px 0px 10px;
+    }
+    .container-text>h2{
+        font-size: 26px;
+    }
+}
+
+/* grid container ends here */

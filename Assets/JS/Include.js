@@ -21,7 +21,7 @@ $(function () {
 
 $('.owl-carousel').owlCarousel({
   loop: true,
-  margin: 20,
+  margin: 0,
   nav: true,
   autoplay: true,
   slideTransition: 'linear',
@@ -30,17 +30,39 @@ $('.owl-carousel').owlCarousel({
   center: true,
   responsive: {
     0: {
-      items: 2
+      items: 1
     },
     600: {
-      items: 3
+      items: 2
     },
     1000: {
-      items: 5
+      items: 4
     }
   }
 })
 
+$(document).ready(function () {
+  $('.customer-logos').slick({
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+});
 
 $(document).ready(function () {
   $(".set > a").on("click", function () {

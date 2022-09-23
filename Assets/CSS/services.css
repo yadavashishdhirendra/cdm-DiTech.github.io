@@ -148,7 +148,7 @@ html {
 }
 
 .header-img {
-    width: 80% !important;
+    width: 100% !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -157,13 +157,6 @@ html {
     }
 }
 
-.dashed-border {
-    top: 245px;
-}
-
-.featured-projects {
-    padding: 40px 20px 300px 20px;
-}
 
 .span-ppc>span {
     font-family: 'Nunito_Bold';
@@ -203,41 +196,13 @@ html {
 
 
 .dashed-borders {
-    border: 2px dashed #29267E;
-    max-width: 450px;
-    margin: auto;
-    text-align: center;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    padding: 20px 40px 20px 40px;
+    top: 0px !important;
 }
 
 
-
-.dashed-borders>h3 {
-    font-family: 'Noto_Serif_SC_Medium';
-    font-size: 26px;
-    color: #29267E;
-}
-
-.dashed-borders>p {
-    font-size: 16px;
-    color: #000000;
-    font-family: 'Nunito_Medium';
-    margin-bottom: 0rem;
-    margin-top: 1rem;
-}
-
-.dashed-borders>p>span {
-    font-family: 'Nunito_Bold';
-    color: #EC1C24;
-}
 
 .dash-projects {
-    padding: 50px 20px 50px 20px  ;
+    padding: 50px 20px 50px 20px;
 }
 
 #mobile_view {
@@ -264,3 +229,14 @@ html {
 }
 
 /* PPC CODE ENDS HERE */
+
+.smm-unique-img {
+    background: rgba(0, 0, 0, 0.2) !important;
+    padding: 20px 20px 20px 20px !important;
+}
+
+@media screen and (max-width:1080px) {
+    .img-flexbox {
+        display: initial;
+    }
+}

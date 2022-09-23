@@ -736,6 +736,7 @@ figure:hover img {
 .two-blocks>img {
     position: absolute;
     top: -100px;
+    z-index: 99999;
 }
 
 .slider-show {
@@ -859,12 +860,259 @@ figure:hover img {
 }
 
 @media screen and (max-width: 576px) {
-    .let-s-connect>.container>h3{
+    .let-s-connect>.container>h3 {
         font-size: 22px;
     }
-    .let-s-connect>.container>p{
-       margin-bottom: 1rem;
-       margin-top: 1rem;
+
+    .let-s-connect>.container>p {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 }
+
 /* let's connect section ends here */
+
+/* slider section starts here */
+.slideshow {
+    position: relative;
+    /* overflow: hidden; */
+    width: 100vw;
+    height: 500px;
+}
+
+.holder {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 10000vw;
+    height: 500px;
+    transition: left 1s;
+}
+
+.holder div {
+    float: left;
+    width: 100vw;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 30px;
+}
+
+.slide-1 {
+    background-image: url('../Images/Home.png');
+}
+
+.slide-2 {
+    background-image: url('../Images/creative-clay-textured-background-blue-border-diy-tie-dye-art-abstract-style.jpg');
+}
+
+.previous {
+    position: relative;
+    top: 0;
+}
+
+.previous>div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    background-color: white;
+    padding: 15px 60px 15px 60px;
+    border-top-left-radius: 17px;
+    gap: 30px;
+    align-items: center;
+}
+
+.steps {
+    color: #29267E;
+    font-size: 25px;
+    font-family: 'Noto_Serif_SC_Medium';
+}
+
+.prev>i {
+    font-size: 22px;
+    cursor: pointer;
+    color: #29267E;
+}
+
+.next>i {
+    font-size: 22px;
+    cursor: pointer;
+    color: #29267E;
+}
+
+.slideshow-overlay-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.slideshow-overlay-text>div {
+    border: 1px solid black;
+    /* height: 100px; */
+}
+
+.slider-overlay-text {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-gap: 2rem;
+}
+
+.slider-overlay-text>.two-blocks {
+    /* border: 1px solid black; */
+    /* height: 40px; */
+    padding: 30px 20px 30px 20px;
+    position: relative;
+    top: 0;
+}
+
+.slider-overlay-text>.two-blocks>h3 {
+    font-family: 'Noto_Serif_SC';
+    font-size: 42px;
+    color: white;
+}
+
+.slider-overlay-text>.two-blocks>p {
+    font-family: 'Nunito_regular';
+    font-size: 18px;
+    color: white;
+    margin-top: 1rem;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: 0.7fr 2fr;
+    grid-gap: 0rem;
+    margin-top: 2rem;
+    max-width: 400px;
+}
+
+.grid-content>aside {
+    display: flex;
+    align-items: center;
+}
+
+.grid-content>aside {
+    margin-bottom: 2rem;
+}
+
+
+.grid-content>aside>h2 {
+    font-size: 42px;
+    color: white;
+}
+
+.grid-content>aside>p {
+    font-size: 18px;
+    margin-bottom: 0rem;
+    color: white;
+    font-family: 'Nunito_regular';
+    text-transform: uppercase;
+}
+
+.two-blocks>img {
+    position: absolute;
+    /* top: -100px; */
+    width: initial;
+    bottom: -25%;
+    right: 25%;
+    z-index: 99999;
+}
+
+.slider-show {
+    margin-top: 3rem;
+}
+
+.seo-slider {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.let-s-develop {
+    margin-top: 0rem;
+}
+
+@media screen and (max-width: 992px) {
+    .slideshow {
+        height: 100vh;
+    }
+
+    .holder {
+        height: 100vh;
+    }
+
+    .holder div {
+        height: 100vh;
+    }
+
+    .grid-content {
+        max-width: 100%;
+    }
+
+    .two-blocks>img {
+        top: initial;
+        position: absolute;
+        bottom: -120px;
+        left: 0;
+    }
+
+    .slider-overlay-text {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .two-blocks>img {
+        display: none;
+    }
+
+    .seo-slider {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .slideshow {
+        height: 500px;
+    }
+
+    .holder {
+        height: 500px;
+        transition: left 1s;
+    }
+
+    .holder div {
+        height: 500px;
+    }
+
+    .slider-overlay-text>.two-blocks {
+        padding: 30px 0px 30px 0px;
+    }
+
+    .holder div {
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slider-overlay-text>.two-blocks>h3 {
+        font-size: 32px;
+    }
+
+    .grid-content>aside>p {
+        font-size: 14px;
+        margin-left: 1rem;
+    }
+
+    .grid-content>aside>h2 {
+        font-size: 34px;
+    }
+}
+
+/* slider section ends here */
+
+#header{
+    background-color: #F8F9FF;
+}
